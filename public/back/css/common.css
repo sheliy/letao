@@ -14,13 +14,21 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+.table.table-bordered td,
+.table.table-bordered th{
+    text-align: center;
+    vertical-align: middle;
+}
+
 .login_bg {
     background-color:#222d32;
 }
 .mt_150 {
     margin-top: 150px;
 }
-
+.mb_20 {
+    margin-bottom: 20px;
+}
 .panel-heading h4 {
     text-align: center;
 }
@@ -32,6 +40,9 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     background: #222d32;
     position: absolute;
+}
+.lt_aside.now {
+    left: -180px;
 }
 .lt_aside .brand {
     height: 50px;
@@ -98,6 +109,9 @@ a:link, a:visited, a:hover, a:active {
     line-height: 50px;
     margin-bottom: 20px;
 }
+.lt_main .top.now {
+    padding-left: 20px;
+}
 .lt_main .top a {
     font-size: 16px;
     color: #fff;
@@ -107,4 +121,8 @@ a:link, a:visited, a:hover, a:active {
 .pic_right {
     width: 45%;
     height: 400px;
+}
+
+.text-right {
+    text-align: right;
 }
