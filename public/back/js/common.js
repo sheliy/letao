@@ -1,4 +1,4 @@
-$(function(){
+
     // 关闭进度条
     NProgress.configure({showSpinner: false});
     $(document).ajaxStart(function(){
@@ -50,4 +50,3 @@ $(function(){
             });
         });
     });
-});
