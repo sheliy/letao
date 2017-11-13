@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘商城---分类页</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="lt_container">
+        <!-- 顶部通栏 -->
+        <div class="lt_header">
+            <a href="javascript:history.go(-1);" class="icon_left">
+                <span class="mui-icon mui-icon-back"></span>
+            </a>
+            <h4>乐淘分类</h4>
+            <a href="search.html" class="icon_right">
+                <span class="fa fa-search"></span>
+            </a>
+        </div>
+
+        <!-- 中间内容部分 -->
+        <div class="lt_content">
+            <div class="lt_left">
+                <div class="mui-scroll-wrapper">
+                    <ul class="mui-scroll">
+                        <!--挖个坑-->
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="lt_right">
+                <div class="mui-scroll-wrapper">
+                    <ul class="mui-scroll">
+                        <!--挖个坑-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部固定栏 -->
+        <div class="lt_footer">
+            <ul class="mui-clearfix">
+                <li>
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="category.html">
+                        <span class="fa fa-bars"></span>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-user"></span>
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/html" id="tmpl">
+        {{each rows v i}}
+            <li>
+                <a href="#">{{v.categoryName}}</a>
+            </li>
+        {{/each}}
+    </script>
+    
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
