@@ -1,0 +1,44 @@
+.lt_left {
+    width: 100px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.lt_left ul {
+    width: 100%;
+    background-color: pink;
+}
+.lt_left a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+.lt_left li.now a {
+    background-color: #fff;
+    border-right: none;
+}
+
+.lt_right{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.lt_right .mui-scroll li {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+
+}
+.lt_right .mui-scroll li img {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+.lt_right .tips {
+    padding: 10px;
+}

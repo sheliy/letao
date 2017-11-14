@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>乐淘商城---分类页</title>
+    <title>乐淘商城---登录</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="lib/mui/css/mui.css">
     <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="lt_container">
@@ -18,29 +18,27 @@
             <a href="javascript:history.go(-1);" class="icon_left">
                 <span class="mui-icon mui-icon-back"></span>
             </a>
-            <h4>乐淘分类</h4>
-            <a href="search.html" class="icon_right">
-                <span class="fa fa-search"></span>
-            </a>
+            <h4>登录</h4>
         </div>
 
         <!-- 中间内容部分 -->
         <div class="lt_content">
-            <div class="lt_left">
-                <div class="mui-scroll-wrapper">
-                    <ul class="mui-scroll">
-                        <!--挖个坑-->
-                    </ul>
+            <form class="mui-input-group">
+                <div class="mui-input-row">
+                    <label>用户名</label>
+                    <input type="text" name="username" class="mui-input-clear" placeholder="请输入用户名">
                 </div>
-            </div>
-                
-            <div class="lt_right">
-                <div class="mui-scroll-wrapper">
-                    <ul class="mui-scroll">
-                        <!--挖个坑-->
-                       
-                    </ul>
+                <div class="mui-input-row">
+                    <label>密码</label>
+                    <input type="password" name="password" class="mui-input-password" placeholder="请输入密码">
                 </div>
+                <div class="mui-button-row">
+                    <button type="button" class="btn-login mui-btn mui-btn-primary" >登录</button>
+                    <button type="reset" class="btn-reset mui-btn mui-btn-danger" >重置</button>
+                </div>
+            </form>
+            <div class="register mui-text-right">
+                <a href="register.html">快速注册</a>
             </div>
         </div>
 
@@ -53,20 +51,20 @@
                         <p>首页</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="category.html">
                         <span class="fa fa-bars"></span>
                         <p>分类</p>
                     </a>
                 </li>
                 <li>
-                    <a href="shoppingcart.html">
+                    <a href="#">
                         <span class="fa fa-shopping-cart"></span>
                         <p>购物车</p>
                     </a>
                 </li>
-                <li>
-                    <a href="userinfo.html">
+                <li class="active">
+                    <a href="#">
                         <span class="fa fa-user"></span>
                         <p>会员中心</p>
                     </a>
@@ -74,34 +72,11 @@
             </ul>
         </div>
     </div>
-
-    <script type="text/html" id="tmpl">
-        {{each rows v i}}
-            <li class="{{i == 0 ? 'now' : ''}}" data-id="{{v.id}}">
-                <a href="#">{{v.categoryName}}</a>
-            </li>
-        {{/each}}
-    </script>
-
-    <script type="text/html" id="tmpr">
-        {{if rows.length == 0}}
-            <p class="tips">暂时没有更多分类数据</p>
-        {{/if}}
-        {{each rows v i}}
-            <li>
-                <a href="#">
-                    <img src="{{v.brandLogo?v.brandLogo:'images/none.jpg'}}" alt="">
-                    <p>{{v.brandName}}</p>
-                </a>
-            </li>
-        {{/each}}
-    </script>
     
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
-    <script src="lib/artTemplate/template-web.js"></script>
 
     <script src="js/common.js"></script>
-    <script src="js/category.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
